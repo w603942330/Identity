@@ -4,3 +4,4 @@
 客户端口：5002
 API端口：5003
 SDK 基于.net 5
+参考博客：https://www.cnblogs.com/i3yuan/p/14064380.html
