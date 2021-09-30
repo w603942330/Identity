@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Ids4Demo\\Ids4Demo\\Ids4Demo.csproj": {}
+    "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\Ids4Demo\\Ids4Demo\\Ids4Demo.csproj": {}
   },
   "projects": {
-    "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Ids4Demo\\Ids4Demo\\Ids4Demo.csproj": {
+    "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\Ids4Demo\\Ids4Demo\\Ids4Demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Ids4Demo\\Ids4Demo\\Ids4Demo.csproj",
+        "projectUniqueName": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\Ids4Demo\\Ids4Demo\\Ids4Demo.csproj",
         "projectName": "Ids4Demo",
-        "projectPath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Ids4Demo\\Ids4Demo\\Ids4Demo.csproj",
+        "projectPath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\Ids4Demo\\Ids4Demo\\Ids4Demo.csproj",
         "packagesPath": "C:\\Users\\wengjiwei\\.nuget\\packages\\",
-        "outputPath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Ids4Demo\\Ids4Demo\\obj\\",
+        "outputPath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\Ids4Demo\\Ids4Demo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\安装文件\\VS2019\\SDK\\NuGetPackages"

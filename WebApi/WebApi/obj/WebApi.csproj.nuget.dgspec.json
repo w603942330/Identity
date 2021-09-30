@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\WebApi\\WebApi\\WebApi.csproj": {}
+    "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\WebApi\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\WebApi\\WebApi\\WebApi.csproj": {
+    "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\WebApi\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\WebApi\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\WebApi\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\WebApi\\WebApi\\WebApi.csproj",
+        "projectPath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\WebApi\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\wengjiwei\\.nuget\\packages\\",
-        "outputPath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\WebApi\\WebApi\\obj\\",
+        "outputPath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\WebApi\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\安装文件\\VS2019\\SDK\\NuGetPackages"

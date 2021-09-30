@@ -17,6 +17,7 @@ namespace Ids4Demo
     //3. IdentityServer4服务中心默认提供接口/connect/token获取access token
     //4. IdentityServer4新版本新增ApiScope配置保护API资源，并使用ApiScope结合策略授权完成了一个简单的权限控制
 
+    
     public static class Config
     {
         //下载ids4的依赖：install-package IdentityServer4  -version 2.1.1
@@ -34,13 +35,14 @@ namespace Ids4Demo
         {
             return new List<ApiResource>
             {
-                new ApiResource("api1", "第一个api接口")
+                new ApiResource("api1", "第一个api接口")//api1为对应认证的API名：apiName
                 {
                     //!!!重要
                     Scopes = { "scope1"},
                     UserClaims={JwtClaimTypes.Role},  //添加Cliam 角色类型
                     ApiSecrets={new Secret("apipwd".Sha256())}
                 },
+               
             };
         }
 
@@ -77,22 +79,28 @@ namespace Ids4Demo
             {
                  new Client
                 {
+                     
+                     //密码模式：直接通过用户账号、密码等配置，直接请求获取token
+                     //客户端模式：直接通过用户账号、密码等配置，直接请求获取token，再将token用于访问被保护的API
+                     #region 同时支持密码模式和客户端两种模式访问  
+                     ClientId = "appPassword",
+                     ClientSecrets = { new Secret("secret".Sha256()) },
+                     AllowedGrantTypes = GrantTypes.ResourceOwnerPasswordAndClientCredentials,//同时支持password和client_credentials两种模式访问
 
-                     #region 同时支持password和client_credentials两种模式访问  
-                     //ClientId = "app",
-                     //ClientSecrets = { new Secret("secret".Sha256()) },
-                     //AllowedGrantTypes = GrantTypes.ResourceOwnerPasswordAndClientCredentials,//同时支持password和client_credentials两种模式访问
-
-                     //AllowedScopes = new List<string>
-                     //{
-                     //    IdentityServerConstants.StandardScopes.OpenId,
-                     //    IdentityServerConstants.StandardScopes.Profile,
-                     //    "scope1",
-                     //}
+                     AllowedScopes = new List<string>
+                     {
+                         IdentityServerConstants.StandardScopes.OpenId,
+                         IdentityServerConstants.StandardScopes.Profile,
+                         "scope1",
+                     }
                      #endregion
 
+                   
+                 },
+                 new Client
+                 { 
+                     //根据授权码模式获取的token，同样可以用于访问受保护的API
                      #region 授权码模式
-
 
                         ClientId = "app",
                         ClientName = "code Auth",
@@ -100,9 +108,9 @@ namespace Ids4Demo
                         AllowedGrantTypes = GrantTypes.Code,
 
                         RedirectUris ={
-                            "http://localhost:5002/signin-oidc", //跳转登录到的客户端的地址
+                            "http://localhost:5002/signin-oidc", //跳转登录到的客户端MVC应用的地址
                         },
-                        // RedirectUris = {"http://localhost:5002/auth.html" }, //跳转登出到的客户端的地址
+                        // RedirectUris = {"http://localhost:5002/auth.html" }, //跳转登出到的客户端MVC应用的地址
                         PostLogoutRedirectUris ={
                             "http://localhost:5002/signout-callback-oidc",
                         },
@@ -115,6 +123,25 @@ namespace Ids4Demo
                         AllowAccessTokensViaBrowser=true,
                         // 是否需要同意授权 （默认是false）
                         RequireConsent=true
+                    #endregion
+                 },
+
+                 new Client()
+                 {
+                     #region 隐藏模式,跳转认证中心地址登录，成功后重定向到自己的应用，同时返回token
+                     //客户端Id
+                     ClientId="apiClientImpl",
+                     ClientName="ApiClient for Implicit",
+                     //客户端授权类型，Implicit:隐藏模式
+                     AllowedGrantTypes=GrantTypes.Implicit,
+                     //允许登录后重定向的地址列表，可以有多个
+                     RedirectUris = {"https://localhost:5002/auth.html" },
+                     //允许访问的资源
+                     AllowedScopes={
+                        "secretapi"
+                     },
+                     //允许将token通过浏览器传递
+                     AllowAccessTokensViaBrowser=true
                     #endregion
                  }
             };

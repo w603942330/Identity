@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZhrKEdt95hM/ChkUPjX0h7DzUi5dI6RBzhMoejLfUX8wRVWEsY++31CmJHyEUTTof0iGRcfvoAV2kM8hx+RBVQ==",
+  "dgSpecHash": "0KMicKQvwH8CexEzds/8fnuwrY32P2Eg1etzAcfLWTKTLvfHOVHBYSgmD8vF523zFBNoAgJ/SU3qFH6EcKxSmg==",
   "success": true,
-  "projectFilePath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Ids4Demo\\Ids4Demo\\Ids4Demo.csproj",
+  "projectFilePath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\Ids4Demo\\Ids4Demo\\Ids4Demo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wengjiwei\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\wengjiwei\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",

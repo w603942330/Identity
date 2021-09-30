@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\MyMvcClient\\MyMvcClient\\MyMvcClient.csproj": {}
+    "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\MyMvcClient\\MyMvcClient\\MyMvcClient.csproj": {}
   },
   "projects": {
-    "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\MyMvcClient\\MyMvcClient\\MyMvcClient.csproj": {
+    "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\MyMvcClient\\MyMvcClient\\MyMvcClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\MyMvcClient\\MyMvcClient\\MyMvcClient.csproj",
+        "projectUniqueName": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\MyMvcClient\\MyMvcClient\\MyMvcClient.csproj",
         "projectName": "MyMvcClient",
-        "projectPath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\MyMvcClient\\MyMvcClient\\MyMvcClient.csproj",
+        "projectPath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\MyMvcClient\\MyMvcClient\\MyMvcClient.csproj",
         "packagesPath": "C:\\Users\\wengjiwei\\.nuget\\packages\\",
-        "outputPath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\MyMvcClient\\MyMvcClient\\obj\\",
+        "outputPath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\MyMvcClient\\MyMvcClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\安装文件\\VS2019\\SDK\\NuGetPackages"

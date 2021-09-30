@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FNq/TD6rUgh7g9hPraxhNoICvm34xPK4a8TEB1zhba/7n+DByZf1te/ImzZlgRL2xIykQQgUvoep3YHP9Xpwag==",
+  "dgSpecHash": "1/vRdOm5tJHA4STbJVRjeXYJNATnYwjQDttNT+mDncWDYcPDUldxUTtdIzn5DDDMpEUJfKZclQDBdxqcNtIKyg==",
   "success": true,
-  "projectFilePath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\MyMvcClient\\MyMvcClient\\MyMvcClient.csproj",
+  "projectFilePath": "E:\\WorkSpace\\测试样例\\IdentityServerDemo\\Identity\\MyMvcClient\\MyMvcClient\\MyMvcClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wengjiwei\\.nuget\\packages\\identitymodel\\4.0.0\\identitymodel.4.0.0.nupkg.sha512",
     "C:\\Users\\wengjiwei\\.nuget\\packages\\identitymodel.aspnetcore.oauth2introspection\\4.0.1\\identitymodel.aspnetcore.oauth2introspection.4.0.1.nupkg.sha512",
