@@ -31,6 +31,11 @@ namespace Ids4Demo
             };
         }
 
+
+        /// <summary>
+        /// api配置
+        /// </summary>
+        /// <returns></returns>
         public static IEnumerable<ApiResource> GetApiResources()
         {
             return new List<ApiResource>
@@ -46,6 +51,12 @@ namespace Ids4Demo
             };
         }
 
+
+        /// <summary>
+        /// 创建具体的Scope
+        /// AllowedScopes 属性设置的值，必须在GetApiResources()  GetApis() 里提前定义好，并且在 StartUp.cs 里已经注册
+        /// </summary>
+        /// <returns></returns>
         public static IEnumerable<ApiScope> GetApiScopes()
         {
             return new List<ApiScope>
@@ -54,6 +65,10 @@ namespace Ids4Demo
             };
         }
 
+        /// <summary>
+        /// 认证使用的用户信息
+        /// </summary>
+        /// <returns></returns>
         public static IEnumerable<TestUser> Users()
         {
             return new[]
